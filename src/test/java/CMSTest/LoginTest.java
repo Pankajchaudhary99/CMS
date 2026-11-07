@@ -28,11 +28,11 @@ public class LoginTest {
 
         Thread.sleep(3000);
         loginPage.enterUsername("Admin");
-        loginPage.enterPassword("admin123");
+        loginPage.enterPassword("admin12");
         loginPage.clickLogin();
 
         Assert.assertTrue(
-                driver.getCurrentUrl().contains("/dashboard/index"), "Login Failed!");
+                driver.getCurrentUrl().contains("/dashboard/index"), "Login Passed!");
         }
 
     @AfterMethod
